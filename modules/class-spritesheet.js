@@ -25,7 +25,8 @@ class ViewBoxMap {
 }
 
 class Spritesheet {
-    constructor() {
+    constructor(name) {
+        this.name = name;
         this.spritesheet = svgstore();
         this.viewBoxMap = new ViewBoxMap();
     }
@@ -49,21 +50,21 @@ class Spritesheet {
     }
 
     async writeSpritesheetAsync(filepath) {
-        return fs.writeFile(filepath, this.spritesheet);
+        return fs.outputFile(filepath, this.spritesheet);
     }
 
     writeSpritesheetSync(filepath) {
-        return fs.writeFileSync(filepath, this.spritesheet);
+        return fs.outputFileSync(filepath, this.spritesheet);
     }
 
     async writeViewBoxMapAsync(filepath) {
         const json = JSON.stringify(this.getViewBoxMap());
-        return fs.writeFile(filepath, json);
+        return fs.outputFile(filepath, json);
     }
 
     writeViewBoxMapSync(filepath) {
         const json = JSON.stringify(this.getViewBoxMap());
-        return fs.writeFileSync(filepath, json);
+        return fs.outputFileSync(filepath, json);
     }
 }
 

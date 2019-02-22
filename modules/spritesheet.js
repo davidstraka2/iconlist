@@ -2,7 +2,7 @@ const {Spritesheet} = require('./class-spritesheet');
 
 const createGroupSpritesheetAsync = async (iconlist, groupName) => {
     const group = iconlist.groups[groupName];
-    const spritesheet = new Spritesheet();
+    const spritesheet = new Spritesheet(groupName);
 
     let promises = [];
     for (let i = 0; i < group.spriteList.length; i++) {
@@ -19,7 +19,7 @@ const createGroupSpritesheetAsync = async (iconlist, groupName) => {
 
 const createGroupSpritesheetSync = (iconlist, groupName) => {
     const group = iconlist.groups[groupName];
-    const spritesheet = new Spritesheet();
+    const spritesheet = new Spritesheet(groupName);
 
     for (let i = 0; i < group.spriteList.length; i++) {
         const spriteId = group.spriteList[i];
