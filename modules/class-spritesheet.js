@@ -1,5 +1,17 @@
+const cheerio = require('cheerio');
 const fs = require('fs-extra');
 const svgstore = require('svgstore');
+
+const viewBoxFromSVG = svg => {
+    const $ = cheerio.load(
+        svg,
+        {
+            xmlMode: true,
+        },
+    );
+
+    return $(':root').attr('viewBox');
+};
 
 class ViewBoxMap {
     constructor() {
@@ -7,8 +19,8 @@ class ViewBoxMap {
     }
 
     addSprite(id, svg) {
-        // todo
-        this.map[id] = null;
+        this.map[id] = viewBoxFromSVG(svg);
+        return this;
     }
 }
 
@@ -21,13 +33,19 @@ class Spritesheet {
     async addSpriteAsync(id, filepath) {
         const svg = await fs.readFile(filepath, 'utf-8');
         this.spritesheet.add(id, svg);
+        this.viewBoxMap.addSprite(id, svg);
         return this;
     }
 
     addSpriteSync(id, filepath) {
         const svg = fs.readFileSync(filepath, 'utf-8');
         this.spritesheet.add(id, svg);
+        this.viewBoxMap.addSprite(id, svg);
         return this;
+    }
+
+    getViewBoxMap() {
+        return this.viewBoxMap.map;
     }
 
     async writeSpritesheetAsync(filepath) {
@@ -36,6 +54,16 @@ class Spritesheet {
 
     writeSpritesheetSync(filepath) {
         return fs.writeFileSync(filepath, this.spritesheet);
+    }
+
+    async writeViewBoxMapAsync(filepath) {
+        const json = JSON.stringify(this.getViewBoxMap());
+        return fs.writeFile(filepath, json);
+    }
+
+    writeViewBoxMapSync(filepath) {
+        const json = JSON.stringify(this.getViewBoxMap());
+        return fs.writeFileSync(filepath, json);
     }
 }
 
