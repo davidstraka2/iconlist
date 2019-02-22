@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/davidstraka2/iconlist/issues"
   },
-  "homepage": "https://github.com/davidstraka2/iconlist"
+  "homepage": "https://github.com/davidstraka2/iconlist",
+  "dependencies": {
+    "fs-extra": "^7.0.1",
+    "svgstore": "^3.0.0-2"
+  }
 }

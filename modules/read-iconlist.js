@@ -12,7 +12,7 @@ const isUndef = what => typeof what === 'undefined';
  * @param {Object} list - Required json or js file
  * @returns {Iconlist} Processed output
  */
-const processList = list => {
+const processList = (list, listpath) => {
     if (
         isUndef(list.groups) ||
         list.groups.length === 0
@@ -45,7 +45,7 @@ const processList = list => {
         for (let j = 0; j < groupSprites.length; j++) {
             const sprite = groupSprites[j];
             const spriteId = sprite.id;
-            const spritePath = sprite.path;
+            let spritePath = sprite.path;
 
             // Check sprite params validity
             if (
@@ -60,7 +60,8 @@ const processList = list => {
                 throw `Duplicate sprite ids (group "${ groupName }", sprite "` +
                     `${ spriteId }" ).`;
 
-            // Add sprite to group
+            // Resolve sprite path in relation to iconlist; Add sprite to group
+            spritePath = path.resolve(path.dirname(listpath), spritePath);
             iconlist.groups[groupName].addSprite(spriteId, spritePath);
         }
     }
@@ -89,7 +90,7 @@ const read = filepath => {
         throw `Unable to open file "${ filepath }".`;
     }
 
-    const iconlist = processList(iconlistRaw);
+    const iconlist = processList(iconlistRaw, filepath);
     return iconlist;
 };
 
