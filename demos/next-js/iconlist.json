@@ -1,0 +1,47 @@
+{
+    "groups": [
+        {
+            "name": "groupA",
+            "sprites": [
+                {
+                    "id": "bell",
+                    "path": "node_modules/@fortawesome/fontawesome-free/svgs/regular/bell.svg"
+                },
+                {
+                    "id": "bookmark",
+                    "path": "node_modules/@fortawesome/fontawesome-free/svgs/regular/bookmark.svg"
+                },
+                {
+                    "id": "clock",
+                    "path": "node_modules/@fortawesome/fontawesome-free/svgs/regular/clock.svg"
+                }
+            ]
+        },
+        {
+            "name": "groupB",
+            "sprites": [
+                {
+                    "id": "grin",
+                    "path": "node_modules/@fortawesome/fontawesome-free/svgs/regular/grin.svg"
+                },
+                {
+                    "id": "heart",
+                    "path": "node_modules/@fortawesome/fontawesome-free/svgs/regular/heart.svg"
+                },
+                {
+                    "id": "laugh",
+                    "path": "node_modules/@fortawesome/fontawesome-free/svgs/regular/laugh.svg"
+                }
+            ]
+        },
+        {
+            "name": "groupA",
+            "sprites": [
+                {
+                    "id": "hourglass",
+                    "path": "node_modules/@fortawesome/fontawesome-free/svgs/regular/hourglass.svg"
+                }
+            ]
+        }
+    ]
+}

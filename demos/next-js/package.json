@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "dev-server": "next",
+    "make-sprites": "node make-sprites.js"
+  },
+  "dependencies": {
+    "next": "^8.0.3",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.7.2",
+    "iconlist": "^1.0.1"
+  }
+}
