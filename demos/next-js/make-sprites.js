@@ -5,7 +5,7 @@ const main = async () => {
     const promises = [];
     spritesheets.forEach(
         sheet => promises.push(
-            sheet.writeSpritesheetAsync(`./static/icons/${ sheet.name }.svg`),
+            sheet.writeSpritesheetOptimized(`./static/icons/${ sheet.name }.svg`),
             sheet.writeViewBoxMapAsync(`./static/icons/${ sheet.name }.vbm.json`),
         )
     );
