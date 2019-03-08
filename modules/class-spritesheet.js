@@ -2,6 +2,8 @@ const cheerio = require('cheerio');
 const fs = require('fs-extra');
 const svgstore = require('svgstore');
 
+const optimize = require('./optimize');
+
 const viewBoxFromSVG = svg => {
     const $ = cheerio.load(
         svg,
@@ -49,8 +51,17 @@ class Spritesheet {
         return this.viewBoxMap.map;
     }
 
+    async optimize() {
+        return optimize(this.spritesheet);
+    }
+
     async writeSpritesheetAsync(filepath) {
         return fs.outputFile(filepath, this.spritesheet);
+    }
+
+    async writeSpritesheetOptimized(filepath) {
+        const optimized = await this.optimize();
+        return fs.outputFile(filepath, optimized);
     }
 
     writeSpritesheetSync(filepath) {

@@ -1,6 +1,6 @@
 {
   "name": "iconlist",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "description": "Create spritesheets and viewBox json from a list",
   "keywords": [
@@ -21,6 +21,7 @@
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "fs-extra": "^7.0.1",
+    "svgo": "^1.2.0",
     "svgstore": "^3.0.0-2"
   }
 }
