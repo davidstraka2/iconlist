@@ -1,6 +1,6 @@
 # iconlist
 
-Create spritesheets and viewBox json from a list of svg icons.
+Create optimized spritesheets and viewBox map json from a list of svg icons.
 
 ## Install
 
@@ -10,14 +10,19 @@ npm i iconlist
 
 ## Usage
 
+**For more examples check out the [demos](https://github.com/davidstraka2/iconlist/tree/master/demos) directory.**
+
+Basic usage:
+
 ```
-├── iconlist.json
-└── icons/
+└── spritesheet.js
+├── icons/
+    ├── iconlist.json
     ├── icon-24px.svg
     └── icon-48px.svg
 ```
 
-iconlist.json
+icons/iconlist.json
 ```json
 {
     "groups": [
@@ -26,11 +31,11 @@ iconlist.json
             "sprites": [
                 {
                     "id": "icon1",
-                    "path": "./icons/icon-24px.svg"
+                    "path": "./icon-24px.svg"
                 },
                 {
                     "id": "icon2",
-                    "path": "./icons/icon-48px.svg"
+                    "path": "./icon-48px.svg"
                 }
             ]
         }
@@ -38,16 +43,17 @@ iconlist.json
 }
 ```
 
+spritesheet.js
 ```js
 const {makeSpritesheetsAsync} = require('iconlist');
 
 const main = async () => {
-    const spritesheets = await makeSpritesheetsAsync('./iconlist.json');
+    const spritesheets = await makeSpritesheetsAsync('./icons/iconlist.json');
     const promises = [];
     spritesheets.forEach(
         sheet => promises.push(
-            sheet.writeSpritesheetAsync(`out/${ sheet.name }.svg`),
-            sheet.writeViewBoxMapAsync(`out/${ sheet.name }.viewboxmap.json`),
+            sheet.writeSpritesheetOptimized(`./out/${ sheet.name }.svg`),
+            sheet.writeViewBoxMapAsync(`./out/${ sheet.name }.viewboxmap.json`),
         )
     );
     await Promise.all(promises);

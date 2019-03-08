@@ -2,11 +2,13 @@
   "name": "iconlist",
   "version": "1.0.3",
   "main": "index.js",
-  "description": "Create spritesheets and viewBox json from a list",
+  "description": "Create optimized spritesheets and viewBox map json from a list of icons",
   "keywords": [
     "spritesheet",
     "svg",
-    "icons"
+    "icons",
+    "optimize",
+    "minify"
   ],
   "repository": {
     "type": "git",
