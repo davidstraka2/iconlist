@@ -1,19 +1,8 @@
-const cheerio = require('cheerio');
 const fs = require('fs-extra');
 const svgstore = require('svgstore');
 
 const optimize = require('./optimize');
-
-const viewBoxFromSVG = svg => {
-    const $ = cheerio.load(
-        svg,
-        {
-            xmlMode: true,
-        },
-    );
-
-    return $(':root').attr('viewBox');
-};
+const viewBoxFromSVG = require('./viewbox-from-svg');
 
 class ViewBoxMap {
     constructor() {
