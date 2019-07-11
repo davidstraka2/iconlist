@@ -1,5 +1,5 @@
-const read = require('./modules/read-iconlist');
-const spritesheet = require('./modules/spritesheet');
+const read = require('./read-iconlist');
+const spritesheet = require('./spritesheet');
 
 const makeSpritesheetsAsync = async iconlistPath => {
     const iconlist = read(iconlistPath);

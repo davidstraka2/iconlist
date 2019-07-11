@@ -2,5 +2,4 @@
 *
 
 # Include source files
-!/modules/**/*.js
-!/index.js
+!/src/**/*.js
