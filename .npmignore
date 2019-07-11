@@ -1,0 +1,6 @@
+# Ignore everything (but !..., package.json, README, CHANGELOG, LICEN[SC]E)
+*
+
+# Include source files
+!/modules/**/*.js
+!/index.js

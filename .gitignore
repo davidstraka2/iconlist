@@ -1,4 +1,9 @@
-[Tt]humbs.db
+# System files
+Thumbs.db
+
+# Editor files
 .vscode/
 tempCodeRunnerFile
+
+# Node files
 node_modules/
