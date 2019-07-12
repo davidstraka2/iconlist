@@ -1,5 +1,5 @@
 const {makeSpritesheetsAsync} = require('iconlist');
- 
+
 const main = async () => {
     const spritesheets = await makeSpritesheetsAsync('./iconlist.json');
     const promises = [];

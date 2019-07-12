@@ -1,0 +1,4 @@
+- Tests
+- Linting
+- Code clean up
+- Detailed API description
