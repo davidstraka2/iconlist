@@ -4,15 +4,15 @@ Create optimized spritesheets and viewBox map json from a list of svg icons.
 
 ## Install
 
-```
+```shell
 npm i iconlist
 ```
 
 ## Usage
 
-**For more examples check out the [demos](https://github.com/davidstraka2/iconlist/tree/master/demos) directory.**
+**For more examples check out the [demos](demos/) directory.**
 
-Basic usage:
+**Basic usage:**
 
 ```
 ├── make-spritesheets.js
@@ -22,7 +22,7 @@ Basic usage:
   └── icon-b.svg
 ```
 
-icons/iconlist.json
+*icons/iconlist.json*
 ```json
 {
   "groups": [
@@ -43,7 +43,7 @@ icons/iconlist.json
 }
 ```
 
-make-spritesheets.js
+*make-spritesheets.js*
 ```js
 const {makeSpritesheetsAsync} = require('iconlist');
 
@@ -64,7 +64,7 @@ const main = async () => {
 
 ## Issues
 
-https://github.com/davidstraka2/iconlist/issues
+Please report any issues and suggestions [here](https://github.com/davidstraka2/iconlist/issues).
 
 ## License
 
