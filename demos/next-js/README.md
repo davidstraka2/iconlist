@@ -22,5 +22,5 @@ npm run clean
 ### Remake spritesheets
 
 ```shell
-npm run make-sprites
+npm run make-spritesheets
 ```

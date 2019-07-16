@@ -2,8 +2,8 @@
   "scripts": {
     "clean": "node scripts/clean.js",
     "dev-server": "next",
-    "make-sprites": "node make-sprites.js",
-    "postinstall": "npm run make-sprites"
+    "make-spritesheets": "node make-spritesheets.js",
+    "postinstall": "npm run make-spritesheets"
   },
   "dependencies": {
     "next": "^8.1.0",
