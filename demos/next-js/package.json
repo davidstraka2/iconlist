@@ -13,6 +13,6 @@
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.9.0",
     "fs-extra": "^8.1.0",
-    "iconlist": "^1.1.0"
+    "iconlist": "^1.1.2"
   }
 }
