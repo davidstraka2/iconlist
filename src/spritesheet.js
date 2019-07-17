@@ -24,7 +24,7 @@ const createGroupSpritesheetSync = (iconlist, groupName) => {
     for (let i = 0; i < group.spriteList.length; i++) {
         const spriteId = group.spriteList[i];
         const sprite = group.sprites[spriteId];
-        spritesheet.addSpriteSync(spriteId, sprite.path)
+        spritesheet.addSpriteSync(spriteId, sprite.path);
     }
 
     return spritesheet;
