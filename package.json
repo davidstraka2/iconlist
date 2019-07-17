@@ -30,6 +30,6 @@
     "eslint": "^6.0.1"
   },
   "scripts": {
-    "lint": "eslint . --ignore-path .gitignore --ignore-pattern demos"
+    "lint": "eslint ."
   }
 }

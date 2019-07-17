@@ -1,4 +1,5 @@
 {
+  "root": true,
   "env": {
     "commonjs": true,
     "es6": true,
@@ -13,6 +14,18 @@
     "ecmaVersion": 2018
   },
   "rules": {
+    "dot-location": [
+      "warn",
+      "property"
+    ],
+    "eol-last": [
+      "error",
+      "always"
+    ],
+    "eqeqeq": [
+      "warn",
+      "always"
+    ],
     "indent": [
       "warn",
       4
@@ -21,13 +34,33 @@
       "error",
       "windows"
     ],
-    "quotes": [
+    "no-eval": [
       "error",
+      {"allowIndirect": false}
+    ],
+    "no-implied-eval": "error",
+    "no-trailing-spaces": [
+      "error",
+      {
+        "ignoreComments": false,
+        "skipBlankLines": false
+      }
+    ],
+    "no-var": "error",
+    "quotes": [
+      "warn",
       "single"
     ],
     "semi": [
-      "error",
+      "warn",
       "always"
+    ],
+    "semi-spacing": [
+      "warn",
+      {
+        "after": true,
+        "before": false
+      }
     ]
   }
 }
