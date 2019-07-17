@@ -5,8 +5,8 @@ const {Iconlist} = require('./class-iconlist');
 const isUndef = what => typeof what === 'undefined';
 
 /**
- * Combines all groups with the same name into one. Checks whether all sprite ids
- * within a group are unique, throws error if not. Deletes any empty groups.
+ * Combines all groups with the same name into one. Checks whether all sprite
+ * ids within a group are unique, throws error if not. Deletes any empty groups.
  * Returns null if no nonempty groups were found. Returns an object otherwise.
  *
  * @param {Object} list - Required json or js file

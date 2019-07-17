@@ -34,6 +34,10 @@
       "error",
       "windows"
     ],
+    "max-len": [
+      "warn",
+      80
+    ],
     "no-eval": [
       "error",
       {"allowIndirect": false}
