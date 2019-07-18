@@ -2,6 +2,7 @@
   "scripts": {
     "clean": "node scripts/clean.js",
     "dev-server": "next",
+    "lint": "eslint .",
     "make-spritesheets": "node make-spritesheets.js",
     "postinstall": "npm run make-spritesheets"
   },
@@ -12,6 +13,8 @@
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.9.0",
+    "eslint": "^6.0.1",
+    "eslint-plugin-react": "^7.14.2",
     "fs-extra": "^8.1.0",
     "iconlist": "^1.1.2"
   }
