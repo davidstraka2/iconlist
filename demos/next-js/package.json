@@ -3,8 +3,9 @@
     "clean": "node scripts/clean.js",
     "dev-server": "next",
     "lint": "eslint .",
-    "make-spritesheets": "node make-spritesheets.js",
-    "postinstall": "npm run make-spritesheets"
+    "make-spritesheets": "node scripts/make-spritesheets.js",
+    "postinstall": "npm run make-spritesheets",
+    "start": "npm run dev-server"
   },
   "dependencies": {
     "next": "^8.1.0",

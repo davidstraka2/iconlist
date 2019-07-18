@@ -6,7 +6,7 @@ Install dependencies, make spritesheets, and turn on local dev server:
 
 ```shell
 npm i
-npm run dev-server
+npm start
 ```
 
 Local dev server ready on `http://localhost:3000`.
