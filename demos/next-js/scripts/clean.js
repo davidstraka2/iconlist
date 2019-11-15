@@ -7,7 +7,8 @@ const clean = async () => {
 
     rm('node_modules/');
     rm('.next/');
-    rm('static/icons/');
+    rm('public/static/icons/');
+    rm('tmp/');
 
     await Promise.all(promises);
     console.log('Clean finished.');

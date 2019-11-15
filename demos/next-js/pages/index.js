@@ -1,5 +1,5 @@
-import vbmA from '../static/icons/groupA.vbm.json';
-import vbmB from '../static/icons/groupB.vbm.json';
+import vbmA from '../tmp/icons/groupA.vbm.json';
+import vbmB from '../tmp/icons/groupB.vbm.json';
 
 const vbm = {
     groupA: vbmA,
