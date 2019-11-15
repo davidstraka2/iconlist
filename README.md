@@ -66,6 +66,10 @@ const main = async () => {
 
 Please report any issues and suggestions [here](https://github.com/davidstraka2/iconlist/issues).
 
+## Changelog
+
+[Changelog](CHANGELOG.md)
+
 ## License
 
 [MIT](LICENSE)
