@@ -17,6 +17,6 @@
     "eslint": "^6.6.0",
     "eslint-plugin-react": "^7.16.0",
     "fs-extra": "^8.1.0",
-    "iconlist": "^1.1.2"
+    "iconlist": "^1.1.3"
   }
 }
