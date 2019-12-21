@@ -1,4 +1,5 @@
 {
+  "private": true,
   "scripts": {
     "clean": "node scripts/clean.js",
     "dev-server": "next",
