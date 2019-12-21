@@ -1,0 +1,26 @@
+{
+  "groups": [
+    {
+      "name": "curves",
+      "sprites": [
+        {
+          "id": "circle",
+          "path": "circle.svg"
+        },
+        {
+          "id": "dolphin",
+          "path": "dolphin.svg"
+        }
+      ]
+    },
+    {
+      "name": "text",
+      "sprites": [
+        {
+          "id": "letter-a",
+          "path": "letter-a.svg"
+        }
+      ]
+    }
+  ]
+}
