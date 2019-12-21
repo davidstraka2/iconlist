@@ -1,3 +1,4 @@
-- Tests
-- Code clean up
+- Rewrite in TypeScript
+- Use Prettier
 - Detailed API description
+- Add CLI
