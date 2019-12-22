@@ -1,0 +1,39 @@
+{
+  "overrides": [
+    {
+      "files": ["next-js/pages/*.js"],
+      "env": {
+        "commonjs": false
+      },
+      "extends": "plugin:react/recommended",
+      "parserOptions": {
+        "sourceType": "module"
+      },
+      "rules": {
+        "react/display-name": "off",
+        "react/prop-types": "off",
+        "react/react-in-jsx-scope": "off"
+      },
+      "settings": {
+        "react": {
+          "createClass": "createReactClass",
+          "pragma": "React",
+          "version": "latest"
+        },
+        "propWrapperFunctions": [
+          "forbidExtraProps",
+          {
+            "property": "freeze",
+            "object": "Object"
+          }
+        ],
+        "linkComponents": [
+          {
+            "name": "Link",
+            "linkAttribute": "href"
+          }
+        ]
+      }
+    }
+  ]
+}

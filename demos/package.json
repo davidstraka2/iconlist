@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "description": "This is not meant to be used as a standalone project",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.17.0"
+  }
+}
