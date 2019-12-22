@@ -2,7 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/iconlist.svg?style=for-the-badge&labelColor=222222)](https://www.npmjs.com/package/iconlist)
 [![license](https://img.shields.io/npm/l/iconlist.svg?style=for-the-badge&labelColor=222222)](LICENSE)
-[![ci status](https://img.shields.io/github/workflow/status/davidstraka2/iconlist/Lint%20and%20test%20code%20(cross-platform)?style=for-the-badge&labelColor=222222&logo=github)](https://github.com/davidstraka2/iconlist)
+[![ci status](https://img.shields.io/github/workflow/status/davidstraka2/iconlist/Lint%20and%20test?style=for-the-badge&labelColor=222222&logo=github)](https://github.com/davidstraka2/iconlist)
 
 Create optimized spritesheets and viewBox map json from a list of svg icons.
 
