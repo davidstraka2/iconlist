@@ -71,4 +71,7 @@ const main = async () => {
 
 ## Issues
 
-Please report any issues and suggestions [here](https://github.com/davidstraka2/iconlist/issues).
+[![issues](https://img.shields.io/github/issues/davidstraka2/iconlist?style=for-the-badge&labelColor=222222)](https://github.com/davidstraka2/iconlist/issues)
+[![pull requests](https://img.shields.io/github/issues-pr/davidstraka2/iconlist?style=for-the-badge&labelColor=222222)](https://github.com/davidstraka2/iconlist/pulls)
+
+Please report any issues and suggestions [**here**](https://github.com/davidstraka2/iconlist/issues).
