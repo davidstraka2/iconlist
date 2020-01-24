@@ -1,7 +1,6 @@
 {
   "private": true,
   "scripts": {
-    "clean": "node scripts/clean.js",
     "dev-server": "next",
     "make-spritesheets": "node scripts/make-spritesheets.js",
     "postinstall": "npm run make-spritesheets",
@@ -14,7 +13,6 @@
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.12.0",
-    "fs-extra": "^8.1.0",
     "iconlist": "^1.1.4"
   }
 }

@@ -10,14 +10,6 @@ npm start
 
 Local dev server ready on `http://localhost:3000`.
 
-### Clean
-
-Delete any reproducible files.
-
-```shell
-npm run clean
-```
-
 ### Dev server
 
 Start local dev server **without** installing/checking dependencies and making
