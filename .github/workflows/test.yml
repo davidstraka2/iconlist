@@ -23,11 +23,33 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Install
+    - name: Install eslint
       run: npm install eslint
 
     - name: Lint
-      run: npm run lint
+      run: npm run lint:this
+
+  lint-examples:
+    name: Lint examples
+
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        node-version: [12.x]
+
+    steps:
+
+    - uses: actions/checkout@v1
+
+    - name: Use Node.js ${{ matrix.node-version }} on ${{ matrix.os }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install eslint and lint examples
+      run: npm run lint:examples
 
   test:
     name: Test
