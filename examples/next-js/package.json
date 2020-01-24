@@ -5,7 +5,7 @@
     "dev-server": "next",
     "make-spritesheets": "node scripts/make-spritesheets.js",
     "postinstall": "npm run make-spritesheets",
-    "start": "npm run dev-server"
+    "start": "npm i && npm run dev-server"
   },
   "dependencies": {
     "next": "^9.1.6",

@@ -5,7 +5,6 @@
 Install dependencies, make spritesheets, and turn on local dev server:
 
 ```shell
-npm i
 npm start
 ```
 
@@ -17,6 +16,15 @@ Delete any reproducible files.
 
 ```shell
 npm run clean
+```
+
+### Dev server
+
+Start local dev server **without** installing/checking dependencies and making
+spritesheets.
+
+```shell
+npm run dev-server
 ```
 
 ### Remake spritesheets
