@@ -13,6 +13,6 @@
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.12.0",
-    "iconlist": "^1.1.4"
+    "iconlist": "^1.1.5"
   }
 }

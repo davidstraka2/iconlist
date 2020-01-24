@@ -1,3 +1,21 @@
+# 1.1.5 (2020-01-24)
+
+## Minor package changes
+
+- Updated dependencies
+- Added issue and pull request count badges to README
+
+## Project changes
+
+- Optimized CI workflow by splitting it up into 3 separate jobs (for linting
+    main project, linting examples, and running tests) and by not installing
+    unnecessary dependencies in lint jobs
+- Renamed */demos* to */examples*
+- Added a list of all examples to README in */examples*
+- Moved clean script and linting logic outside of Next.js + Font Awesome demo
+- Tweaked `npm start` script in Next.js + Font Awesome demo to run `npm i`
+    before starting dev server
+
 # 1.1.4 (2019-12-21)
 
 ## Minor package changes
