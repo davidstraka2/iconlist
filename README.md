@@ -17,7 +17,7 @@ npm i iconlist
 
 ## Usage
 
-**For more examples check out the [demos](demos/) directory.**
+**For more examples check out the [examples](examples/) directory.**
 
 **Basic usage:**
 

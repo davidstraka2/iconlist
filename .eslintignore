@@ -1,5 +1,5 @@
-# Node packages
+# Node packages (only /node_modules/ is ignored by default)
 node_modules/
 
-# Demos
-/demos/
+# Examples
+/examples/

@@ -34,7 +34,7 @@
   },
   "scripts": {
     "lint": "npm-run-all lint:*",
-    "lint:demos": "cd demos/ && npm i && npm run lint",
+    "lint:examples": "cd examples && npm i && npm run lint",
     "lint:this": "eslint .",
     "test": "mocha"
   }
