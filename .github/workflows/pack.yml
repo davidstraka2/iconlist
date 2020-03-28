@@ -23,10 +23,14 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: Install
-      run: cd examples && npm ci
+      run: |
+        cd examples
+        npm ci
 
     - name: Pack
-      run: cd examples && npm run pack
+      run: |
+        cd examples
+        npm run pack
 
     - name: Archive examples package artifacts
         uses: actions/upload-artifact@v1
