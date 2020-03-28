@@ -3,11 +3,13 @@
   "description": "This is not meant to be used as a standalone project",
   "scripts": {
     "clean": "node scripts/clean.js",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "pack": "node scripts/pack.js"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.18.0",
+    "execa": "^4.0.0",
     "fs-extra": "^8.1.0"
   }
 }

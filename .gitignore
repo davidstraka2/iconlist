@@ -7,3 +7,6 @@ tempCodeRunnerFile
 
 # Node files
 node_modules/
+
+# Packed examples
+/examples/dist/

@@ -1,5 +1,7 @@
 {
+  "name": "iconlist-example-next-js",
   "private": true,
+  "version": "1.1.5",
   "scripts": {
     "dev-server": "next",
     "make-spritesheets": "node scripts/make-spritesheets.js",

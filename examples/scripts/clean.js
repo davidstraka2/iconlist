@@ -11,11 +11,17 @@ const clean = async () => {
     rm('next-js/public/static/icons/');
     rm('next-js/tmp/');
 
+    // Clean packed examples
+    rm('dist/');
+
     await Promise.all(promises);
-    console.log('Clean finished.');
+    console.log('Cleaning examples finished.');
 };
 
 clean()
     .catch(
-        err => console.log('Clean failed:\n', err)
+        err => {
+            console.error('Cleaning examples failed:\n', err);
+            process.exitCode = 1;
+        }
     );
