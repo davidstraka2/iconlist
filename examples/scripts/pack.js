@@ -22,7 +22,7 @@ const packAll = async () => {
         if (typeof stdout !== 'undefined')
             console.log(stdout);
         if (typeof stderr !== 'undefined')
-        console.error(stderr);
+            console.error(stderr);
     });
     console.log('Packing examples finished.');
 };
