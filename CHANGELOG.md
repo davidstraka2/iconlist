@@ -1,3 +1,18 @@
+# 1.1.6 (2020-03-28)
+
+## Minor package changes
+
+- Updated dependencies
+- Updated package metadata
+
+## Project changes
+
+- Dropped Node 8 testing in CI, added Node 13
+- Set up CI workflow to pack examples as artifacts
+- Limited CI "Lint and test" workflow's pull request event activity types to
+    opened or reopened
+- Optimized CI workflows by using `npm ci` where possible
+
 # 1.1.5 (2020-01-24)
 
 ## Minor package changes
